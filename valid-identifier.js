@@ -30,7 +30,7 @@ var reserved = [
     "virtual","void","volatile","while","assert","package","synchronized",
     "boolean","implements","import"];
 
-var regX = /([a-zA-Z_$][a-zA-Z\d_$]*\.)*[a-zA-Z_$][a-zA-Z\d_$]*/;
+var regX = /([a-zA-Z_$][a-zA-Z\d_$\-]*\.)*[a-zA-Z_$][a-zA-Z\d_$\-]*/;
 
 module.exports = function (nsPackage) {
     var match = nsPackage.match(regX);
